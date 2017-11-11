@@ -1,0 +1,27 @@
+<apex:page standardController="account" tabStyle="contact">
+    <apex:form >
+       <apex:pageBlock title="account details" >
+       
+           <apex:pageBlockSection title="account info" columns="1" collapsible="false">
+           
+           
+           <apex:inputField value="{!account.name}"/>
+           <apex:inputField value="{!account.industry}"/>
+           <apex:inputField value="{!account.type}" required="true"/>
+           
+           
+           
+           </apex:pageBlockSection>
+           <apex:pageblocksection title="contact info" columns="1">
+           <apex:inputField value="{!account.phone}"/>
+           <apex:inputField value="{!account.fax}"/>
+           <apex:inputField value="{!account.website}"/>
+            </apex:pageblocksection>
+            <apex:pageBlockButtons >
+            <apex:commandButton value="save" action="{!save}"/>
+            <apex:commandButton value="cancel"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

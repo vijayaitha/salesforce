@@ -1,0 +1,24 @@
+<apex:page controller="addrecord" >
+<apex:form >
+<apex:pageblock title="INFO">
+<apex:pageBlockSection title="Service Details">
+<apex:inputField value="{!s.name}"/>
+<apex:inputField value="{!s.gro__c}"/>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Add records">
+<apex:actionSupport event="onclick" action="{!addrecodhit}"/>
+
+<apex:commandButton value="Add Record when hit"/>
+
+<apex:inputField value="{!c.name}"/>
+
+
+</apex:pageBlockSection>
+
+</apex:pageblock>
+
+</apex:form>
+ 
+</apex:page>

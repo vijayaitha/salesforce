@@ -1,0 +1,23 @@
+<apex:page standardController="service__c" extensions="twoObj">
+<apex:form >
+<apex:pageBlock title="two object details">
+<apex:pageBlockSection title="service info">
+<apex:inputField value="{!s.name}" />  
+<apex:inputField value="{!s.gro__c}"/>
+
+</apex:pageBlockSection>
+
+<apex:pageblocksection title="compaints">
+<apex:inputField value="{!c.name}"/>
+<apex:inputField value="{!c.gro__c}"/>
+<apex:inputField value="{!c.serv__c}"/>
+
+</apex:pageBlocksection>
+<apex:pageblockButtons >
+<apex:commandButton value="save" action="{!save}"/>
+<apex:commandButton value="next page" action="{!next}"/>
+</apex:pageblockButtons>
+</apex:pageBlock>
+</apex:form>  
+  
+ </apex:page>

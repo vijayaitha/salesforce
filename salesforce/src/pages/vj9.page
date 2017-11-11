@@ -1,0 +1,24 @@
+<apex:page controller="c4" sidebar="false">
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:pageBlocktable value="{!banking_acts}" var="a">
+  <apex:column value="{!a.name}"/><br/>
+   <apex:column value="{!a.type}"/><br/>
+    <apex:column value="{!a.industry}"/><br/>
+     <apex:column value="{!a.phone}"/><br/>
+     </apex:pageBlocktable>
+     
+ <apex:pageBlocktable value="{!energy_acts}" var="a">
+  <apex:column value="{!a.name}"/><br/>
+   <apex:column value="{!a.type}"/><br/>
+    <apex:column value="{!a.industry}"/><br/>
+     <apex:column value="{!a.phone}"/><br/>
+     
+  
+  </apex:pageBlocktable>
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+  
+</apex:page>

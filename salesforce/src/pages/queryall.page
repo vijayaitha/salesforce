@@ -1,0 +1,7 @@
+<apex:page controller="allacc">
+<apex:form >
+<apex:pageBlock title="account">
+{!acc}
+</apex:pageBlock>
+</apex:form>  
+</apex:page>

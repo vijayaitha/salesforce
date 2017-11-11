@@ -1,0 +1,29 @@
+<apex:page standardController="service__c" tabStyle="onions__c">
+    <apex:form >
+       <apex:pageBlock title="service details" >
+       
+           <apex:pageBlockSection title="service info" columns="1" collapsible="false">
+           
+           
+           <apex:inputField value="{!service__c.name}"/>
+           <apex:inputField value="{!service__c.gro__c}"/>
+           <apex:inputField value="{!service__c.d_o_b__c}" required="true"/>
+           
+           
+           
+           </apex:pageBlockSection>
+           <apex:pageblocksection title="complaints info" columns="2">
+           <apex:inputField value="{!service__c.technology__c}"/>
+           <apex:inputField value="{!service__c.complaints__c}"/>
+           <apex:inputField value="{!service__c.encrypt__c}"/>
+           <apex:inputField value="{!service__c.auto__c}"/>
+            </apex:pageblocksection>
+            <apex:pageBlockButtons >
+            <apex:commandButton value="save" action="{!save}"/>
+            <apex:commandButton value="cancel"/>
+            <apex:commandButton value="save&new"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

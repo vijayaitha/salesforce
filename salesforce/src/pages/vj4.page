@@ -1,0 +1,18 @@
+<apex:page standardController="account">
+<apex:pageblock title="display section">
+name:{!account.name}<br/>
+type:{!account.type}<br/>
+phone:{!account.phone}<br/>
+industry:{!account.industry}<br/>
+</apex:pageBlock>
+<apex:form >
+<apex:pageBlock title="edit section">
+<apex:inputField value="{!account.name}"/><br/>
+<apex:inputField value="{!account.type}"/><br/>
+<apex:inputField value="{!account.phone}"/><br/>
+<apex:inputField value="{!account.industry}"/><br/>
+</apex:pageblock>
+<apex:commandButton value="save" action="{!save}"/>
+<apex:commandButton value="quicksave" action="{!quicksave}"/>
+</apex:form>
+</apex:page>

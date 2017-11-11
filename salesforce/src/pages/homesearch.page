@@ -1,0 +1,33 @@
+<apex:page controller="home" sidebar="false" showHeader="false" >
+<apex:form id="form1" style="text-align:center;margin:auto;z">
+ 
+ <style>
+        body{
+                   background-image:url("https://taj.tajhotels.com/content/dam/luxury/hotels/Taj_Falaknuma_Palace/images/16x7/AAG_ExteriorNight2-16x7.jpg.transform.heroHomeDesktop.image.jpg");
+                   background-repeat:no-repeat;
+                   backgrounf-position: center;
+                  
+              }    
+        </style>
+    <apex:pageBlock title="Motels Search And Post Page" >
+        <apex:pageBlockSection columns="1" >
+  
+        <apex:commandButton value="Post New Motel" action="{!post}" style="margin-left:70%"/>
+         
+            <apex:inputField value="{!Motel.Motel_Category__c}"/>
+            <apex:inputText value="{!keyword}"/>
+            <apex:commandButton value="Enter Zipcode" action="{!Find}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockTable value="{!results}" var="res" rendered="{!NOT(ISNULL(results))}">
+            <apex:column headervalue="Motel Name" >
+                <apex:outputLink value="/apex/contactmotel?id={!res.id}">{!res.name}</apex:outputLink>
+            </apex:column>
+            <apex:column value="{!res.City__c}"/>
+            <apex:column value="{!res.Phone__c}"/>
+            <apex:column value="{!res.State__c}"/>
+            <apex:column value="{!res.Email__c}"/>
+            <apex:column value="{!res.Zip_Code__c}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

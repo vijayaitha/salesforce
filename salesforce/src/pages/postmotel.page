@@ -1,0 +1,26 @@
+<apex:page controller="postmotel">
+    <apex:form >
+        <apex:pageBlock title="Info">
+            <apex:pageBlockSection title="Motel Details">
+                <apex:inputField value="{!p.Name}"/>
+                <apex:inputField value="{!p.Motel_Category__c}"/>
+                <apex:inputField value="{!p.No_of_Rooms_In_Motel__c}"/>
+                <apex:inputField value="{!p.Price__c}"/>
+                <apex:inputField value="{!p.Email__c}"/>
+                <apex:inputField value="{!p.Phone__c}"/>
+                <apex:inputField value="{!p.Street_1__c}"/>
+                <apex:inputField value="{!p.Street_2__c}"/>
+                <apex:inputField value="{!p.City__c}"/>
+                <apex:inputField value="{!p.State__c}"/>
+                <apex:inputField value="{!p.Country__c}"/>
+                <apex:inputField value="{!p.Zip_Code__c}"/>
+                
+            </apex:pageblockSection>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Post" action="{!save}"/>
+                <apex:commandButton value="Cancel" />
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+    </apex:form>  
+</apex:page>

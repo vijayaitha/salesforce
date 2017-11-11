@@ -1,0 +1,25 @@
+<apex:page controller="motels" >
+<apex:form >
+<apex:pageBlock title="info">
+<apex:inputText value="{!str}"/>
+<apex:commandButton value="search" action="{!soslresults}"/>
+
+<apex:pageBlockSection title="Motel Details">
+<apex:inputField value="{!m.Type_of_Motel__c}"/>
+<apex:inputField value="{!m.No_of_Rooms__c}"/>
+<apex:inputField value="{!m.No_of_Persons__c}"/>
+<apex:inputField value="{!m.Check_in__c}"/>
+<apex:inputField value="{!m.Check_Out__c}"/>
+<apex:inputField value="{!m.Zip_Code__c}"/>
+
+</apex:pageblockSection>
+
+<apex:pageBlockButtons >
+<apex:commandButton value="submit" action="{!saverecords}"/>
+<apex:commandButton value="Cancel" />
+<apex:commandButton value="PostMotel" action="{!next}"/>
+<apex:commandButton value="Registration for new user " action="{!register}"/>
+</apex:pageBlockButtons>
+</apex:pageblock>
+</apex:form> 
+</apex:page>

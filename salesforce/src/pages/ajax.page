@@ -1,0 +1,42 @@
+<apex:page id="g" controller="ajaxfun" >
+<apex:form id="t">
+<apex:pageBlock id="v" title="compalints info">
+<apex:pageBlockSection id="s" title="information">
+<apex:inputText id="val" value="{!st}" ><br/>
+<apex:inputfield id="k" value="{!c.color__c}"/><br/>
+<apex:inputfield id="m" value="{!c.gro__c}"/>
+<apex:actionsupport event="ondoubleclick" action="{!ajaxevent}"/>
+
+
+</apex:inputtext>
+
+</apex:pageBlockSection>
+
+<script>
+function validate(){
+window.alert('new alert');
+var v= document.getelementbyid('g:t:v:s:val:k:m');
+var y= colorid.options[colorid.selectedindex].values;
+
+window.alert('second alert');
+if(y='red'){
+document.getelementbyid('g:t:v:s:val:k:m').style.display='block';
+}
+else{
+document.getelementbyid('g:t:v:s:val:k:m').style.display='none';
+}
+}
+</script>
+<apex:pageblockButtons >
+ 
+
+<apex:commandButton value="save" onclick="validate()"/>
+
+</apex:pageBlockButtons>
+
+
+</apex:pageBlock>
+
+</apex:form>
+ 
+</apex:page>

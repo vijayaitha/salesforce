@@ -1,0 +1,14 @@
+<apex:page controller="custobj" >
+<apex:form >
+<apex:pageBlock title="info">
+<apex:pageBlockSection title="professor info">
+<apex:inputField value="{!p.ap1__c}"/>
+<apex:inputField value="{!p.salary__c}"/>
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+<apex:commandButton value="create" action="{!save}"/>
+    
+</apex:form>
+  
+</apex:page>

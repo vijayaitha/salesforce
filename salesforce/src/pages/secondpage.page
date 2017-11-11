@@ -1,0 +1,14 @@
+<apex:page controller="firstpage" >
+<apex:form >
+<apex:pageBlock title="info">
+<apex:pageBlockSection title="professor info">
+<apex:inputField value="{!p.name}"/>
+<apex:inputField value="{!p.grocery__c}"/>
+<apex:inputField value="{!p.department__c}"/>
+
+</apex:pageBlockSection>
+<apex:commandButton />
+<apex:commandButton value="save" action="{!next}"/>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

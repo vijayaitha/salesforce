@@ -1,0 +1,20 @@
+<apex:page controller="contact">
+<apex:form >
+<apex:pageBlock title="Info">
+<apex:pageBlockSection title="Contact Motel">
+<apex:inputField value="{!c.Name}"/>
+
+<apex:inputField value="{!c.email__c}"/>
+<apex:inputField value="{!c.phone__c}"/>
+<apex:inputField value="{!c.service__c}"/>
+<apex:inputField value="{!c.message__c}"/>
+
+</apex:pageblockSection>
+
+<apex:pageBlockButtons >
+<apex:commandButton value="Contact" action="{!savepost}"/>
+
+</apex:pageBlockButtons>
+</apex:pageblock>
+</apex:form> 
+</apex:page>

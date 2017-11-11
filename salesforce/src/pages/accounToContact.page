@@ -1,0 +1,7 @@
+<apex:page controller="account">
+<apex:form >
+<apex:inputText value="{!str}"/>
+<apex:commandButton value="save" action="{!accmethod}"/>
+{!acc}
+</apex:form>
+</apex:page>

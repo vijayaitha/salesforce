@@ -1,0 +1,11 @@
+<apex:page controller="acobj">
+<apex:form >
+<apex:pageblock title="INFO">
+<apex:pageBlockSection title="account">
+
+
+</apex:pageBlockSection>
+</apex:pageblock>
+</apex:form>
+  
+</apex:page>

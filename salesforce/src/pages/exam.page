@@ -1,0 +1,20 @@
+<apex:page controller="examprac">
+<apex:form >
+<apex:pageblock >
+<apex:pageblocktable value="{!d}" var="b">
+<apex:column value="{!b.name}"/>
+<apex:column value="{!b.branch__c}"/>
+</apex:pageblocktable>
+
+<apex:pageBlockTable value="{!s}" var="a">
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.department__c}"/>
+<apex:column value="{!a.grocery__c}"/>
+
+</apex:pageBlockTable>
+
+</apex:pageblock>
+
+</apex:form>
+ 
+</apex:page>

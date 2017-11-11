@@ -1,0 +1,38 @@
+<apex:page controller="newsearch" sidebar="false" showHeader="false">
+<apex:form style="text-align:center; margin:auto;z">
+<style>
+        body{
+                   background-image:url(""https://jacobyonan.files.wordpress.com/2016/08/scales-of-justice-01.jpg?w=1440");
+                   background-repeat:no-repeat;
+                   backgrounf-position: center;
+               }    
+        </style>
+        <apex:pageBlock id="pb">
+
+            <apex:pageBlockButtons >
+
+                <apex:commandButton action="{!searchRecords}" value="Search" rerender="pb"/>
+
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection columns="1">
+
+                <apex:outputLabel value="Department Details" />
+
+                <apex:inputText value="{!field1}" />
+               
+
+            </apex:pageBlockSection>
+          <apex:pageBlockTable var="record" value="{!records}" id="pbTable">
+
+               <apex:column value="{!record.branch__c}" />
+               
+               <apex:column value="{!record.name}" />
+
+           </apex:pageBlockTable>
+
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

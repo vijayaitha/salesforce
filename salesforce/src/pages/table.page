@@ -1,0 +1,23 @@
+<apex:page controller="tabledsp">
+<apex:form >
+<apex:pageblock >
+<apex:datatable value="{!s}" var="a">
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.gro__c}"/>
+</apex:datatable>
+
+<apex:pageBlockTable value="{!s}" var="a">
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.gro__c}"/>
+
+
+
+</apex:pageBlockTable>
+
+
+
+</apex:pageblock>
+
+</apex:form>
+ 
+</apex:page>

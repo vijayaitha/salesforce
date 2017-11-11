@@ -1,0 +1,19 @@
+<apex:page controller="c3" >
+  <apex:pageBlock title="list of account">
+  <apex:pageBlocktable value="{!acts}" var="a">
+  <apex:column value="{!a.name}"/><br/>
+   <apex:column value="{!a.type}"/><br/>
+    <apex:column value="{!a.industry}"/><br/>
+     <apex:column value="{!a.phone}"/><br/>
+     
+ </apex:pageBlocktable>
+ <apex:pageBlocktable value="{!energy_acts}" var="a">
+  <apex:column value="{!a.name}"/><br/>
+   <apex:column value="{!a.type}"/><br/>
+    <apex:column value="{!a.industry}"/><br/>
+     <apex:column value="{!a.phone}"/><br/>
+     
+  
+  </apex:pageBlocktable>
+  </apex:pageBlock>
+</apex:page>
